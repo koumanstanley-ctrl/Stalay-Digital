@@ -1,31 +1,24 @@
-/* ==============================
+/* ======================================
    STALAY DIGITAL
-   INTERACTIONS DU SITE
-================================ */
+   Menu mobile, formulaire et année
+====================================== */
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    // ANNÉE AUTOMATIQUE DANS LE PIED DE PAGE
-
-    const yearElement = document.getElementById("current-year");
-
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
-
-
-    // MENU POUR TÉLÉPHONES ET TABLETTES
-
+    // MENU MOBILE
     const menuToggle = document.getElementById("menu-toggle");
-    const navigation = document.getElementById("navigation");
+    const navLinks = document.getElementById("nav-links");
 
-    if (menuToggle && navigation) {
+    if (menuToggle && navLinks) {
 
         menuToggle.addEventListener("click", function () {
 
-            const isOpen = navigation.classList.toggle("open");
+            const isOpen = navLinks.classList.toggle("open");
 
-            menuToggle.setAttribute("aria-expanded", String(isOpen));
+            menuToggle.setAttribute(
+                "aria-expanded",
+                isOpen ? "true" : "false"
+            );
 
             menuToggle.setAttribute(
                 "aria-label",
@@ -33,45 +26,70 @@ document.addEventListener("DOMContentLoaded", function () {
             );
 
             menuToggle.textContent = isOpen ? "✕" : "☰";
-
         });
 
-
-        // FERMER LE MENU APRÈS UN CLIC SUR UN LIEN
-
-        navigation.querySelectorAll("a").forEach(function (link) {
+        // Fermer le menu après avoir choisi une rubrique
+        navLinks.querySelectorAll("a").forEach(function (link) {
 
             link.addEventListener("click", function () {
 
-                navigation.classList.remove("open");
+                navLinks.classList.remove("open");
 
                 menuToggle.setAttribute("aria-expanded", "false");
                 menuToggle.setAttribute("aria-label", "Ouvrir le menu");
 
                 menuToggle.textContent = "☰";
-
             });
 
         });
+    }
 
 
-        // FERMER LE MENU SI L'UTILISATEUR APPUIE SUR ÉCHAP
+    // ANNÉE AUTOMATIQUE DANS LE PIED DE PAGE
+    const yearElement = document.getElementById("current-year");
 
-        document.addEventListener("keydown", function (event) {
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
 
-            if (event.key === "Escape") {
 
-                navigation.classList.remove("open");
+    // FORMULAIRE DE CONTACT VERS WHATSAPP
+    const contactForm = document.getElementById("contact-form");
 
-                menuToggle.setAttribute("aria-expanded", "false");
-                menuToggle.setAttribute("aria-label", "Ouvrir le menu");
+    if (contactForm) {
 
-                menuToggle.textContent = "☰";
+        contactForm.addEventListener("submit", function (event) {
 
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const activity = document.getElementById("activity").value.trim();
+            const projectType = document.getElementById("project-type").value;
+            const message = document.getElementById("message").value.trim();
+
+            if (!name || !activity || !projectType || !message) {
+                alert("Merci de remplir tous les champs.");
+                return;
             }
 
-        });
+            const whatsappNumber = "2250103510738";
 
+            const whatsappMessage =
+                "Bonjour Stalay Digital !\n\n" +
+                "Je souhaite vous présenter mon projet.\n\n" +
+                "Nom : " + name + "\n" +
+                "Activité : " + activity + "\n" +
+                "Besoin : " + projectType + "\n\n" +
+                "Description du projet :\n" + message;
+
+            const whatsappURL =
+                "https://wa.me/" +
+                whatsappNumber +
+                "?text=" +
+                encodeURIComponent(whatsappMessage);
+
+            window.open(whatsappURL, "_blank", "noopener,noreferrer");
+        });
     }
 
 });
