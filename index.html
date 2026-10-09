@@ -4,37 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Stalay Digital | Agence digitale</title>
+    <title>Stalay Digital | Des idées qui prennent forme</title>
 
-    <meta name="description"
-          content="Stalay Digital accompagne les entreprises dans leur développement digital : création de sites web, identité visuelle et communication numérique.">
+    <meta name="description" content="Stalay Digital accompagne les entrepreneurs, commerces et organisations dans la création de sites web, la communication digitale et le développement de leur présence en ligne.">
 
-    <meta name="theme-color" content="#090909">
+    <meta name="theme-color" content="#ffffff">
 
-    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="icon" href="assets/logo.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <!-- BARRE DE NAVIGATION -->
     <header class="header">
-        <div class="container nav-container">
+        <div class="container navbar">
 
-            <a href="#accueil" class="brand" aria-label="Stalay Digital, accueil">
-                <img src="assets/logo.png"
-                     alt="Logo Stalay Digital"
-                     class="brand-logo">
-
-                <span class="brand-name">
-                    STALAY<span> DIGITAL</span>
-                </span>
+            <a href="#accueil" class="brand">
+                <img src="assets/logo.png" alt="Logo Stalay Digital">
+                <span>STALAY<span class="brand-accent"> DIGITAL</span></span>
             </a>
 
             <button class="menu-toggle"
@@ -44,12 +37,12 @@
                 ☰
             </button>
 
-            <nav class="navigation" id="navigation">
+            <nav class="nav-links" id="nav-links">
                 <a href="#accueil">Accueil</a>
-                <a href="#services">Services</a>
-                <a href="#projets">Projets</a>
                 <a href="#apropos">À propos</a>
-                <a href="#contact" class="nav-contact">Contact ↗</a>
+                <a href="#services">Services</a>
+                <a href="#realisations">Réalisations</a>
+                <a href="#contact" class="nav-contact">Contact</a>
             </nav>
 
         </div>
@@ -58,42 +51,45 @@
 
     <main>
 
-        <!-- SECTION D'ACCUEIL -->
-        <section class="hero" id="accueil">
+        <!-- ACCUEIL -->
+        <section class="hero section" id="accueil">
             <div class="container hero-grid">
 
                 <div class="hero-content">
 
-                    <p class="eyebrow">
+                    <div class="eyebrow">
                         <span class="status-dot"></span>
-                        AGENCE DIGITALE • CÔTE D'IVOIRE
-                    </p>
+                        CRÉATIVITÉ · DIGITAL · AMBITION
+                    </div>
 
                     <h1>
-                        Donnons vie à vos idées
-                        <span>dans le digital.</span>
+                        Vos idées méritent
+                        <span class="gradient-text">d'aller plus loin.</span>
                     </h1>
 
                     <p class="hero-description">
-                        Nous aidons les entreprises, entrepreneurs et marques
-                        à développer leur présence en ligne grâce à des
-                        solutions digitales modernes et adaptées à leurs besoins.
+                        Stalay Digital accompagne les entrepreneurs,
+                        les commerces et les organisations dans leur
+                        développement grâce aux outils numériques.
+                    </p>
+
+                    <p class="hero-slogan">
+                        Des idées qui prennent forme.
                     </p>
 
                     <div class="hero-buttons">
-                        <a href="#contact" class="button button-gold">
-                            Parlons de votre projet
-                            <span>↗</span>
+                        <a href="#contact" class="btn btn-primary">
+                            Parlons de votre projet →
                         </a>
 
-                        <a href="#projets" class="button button-outline">
+                        <a href="#realisations" class="btn btn-secondary">
                             Découvrir nos projets
                         </a>
                     </div>
 
-                    <div class="hero-note">
-                        <span class="note-line"></span>
-                        Des idées qui prennent forme.
+                    <div class="hero-proof">
+                        <span class="proof-icon">✦</span>
+                        Des solutions pensées pour vos ambitions.
                     </div>
 
                 </div>
@@ -101,30 +97,36 @@
 
                 <div class="hero-visual">
 
-                    <div class="photo-frame">
-                        <div class="photo-glow"></div>
+                    <div class="visual-glow"></div>
 
-                        <img src="assets/photo-stalay.jpg"
-                             alt="Fondateur de Stalay Digital"
-                             class="founder-photo">
+                    <div class="photo-frame">
+                        <img
+                            src="photo-stalay.jpg"
+                            alt="Kouman Kouassi Stanislas, fondateur de Stalay Digital"
+                            class="founder-photo"
+                        >
 
                         <div class="photo-caption">
                             <span class="caption-label">FONDATEUR</span>
-                            <strong>STALAY DIGITAL</strong>
-                            <span class="caption-subtitle">
-                                Créativité · Stratégie · Innovation
-                            </span>
+                            <strong>Kouman Kouassi Stanislas</strong>
+                            <span class="caption-role">Stalay Digital</span>
                         </div>
                     </div>
 
-                    <div class="floating-badge badge-top">
-                        <span class="badge-symbol">✦</span>
-                        <span>Créativité digitale</span>
+                    <div class="floating-card floating-top">
+                        <span class="floating-icon">✦</span>
+                        <div>
+                            <strong>Créativité</strong>
+                            <small>Des idées aux projets</small>
+                        </div>
                     </div>
 
-                    <div class="floating-badge badge-bottom">
-                        <span class="badge-dot"></span>
-                        Des idées qui prennent forme
+                    <div class="floating-card floating-bottom">
+                        <span class="floating-icon blue-icon">↗</span>
+                        <div>
+                            <strong>Présence digitale</strong>
+                            <small>Construisons votre image</small>
+                        </div>
                     </div>
 
                 </div>
@@ -134,213 +136,23 @@
 
 
         <!-- BANDEAU -->
-        <section class="brand-strip">
-            <div class="container strip-content">
-                <span>CRÉATIVITÉ</span>
-                <span class="strip-star">✦</span>
-                <span>STRATÉGIE</span>
-                <span class="strip-star">✦</span>
-                <span>INNOVATION</span>
-                <span class="strip-star">✦</span>
-                <span>RÉSULTATS</span>
-            </div>
-        </section>
+        <section class="value-strip">
+            <div class="container value-grid">
 
-
-        <!-- SERVICES -->
-        <section class="section services-section" id="services">
-            <div class="container">
-
-                <div class="section-heading">
-                    <div>
-                        <p class="eyebrow">CE QUE NOUS FAISONS</p>
-
-                        <h2>
-                            Des solutions pour
-                            <span>vous démarquer.</span>
-                        </h2>
-                    </div>
-
-                    <p class="section-intro">
-                        Des services conçus pour améliorer votre image,
-                        renforcer votre présence numérique et accompagner
-                        la croissance de votre activité.
-                    </p>
+                <div>
+                    <span class="value-number">01</span>
+                    <span class="value-text">Comprendre vos besoins</span>
                 </div>
 
-
-                <div class="services-grid">
-
-                    <article class="service-card">
-                        <span class="service-number">01</span>
-
-                        <div class="service-icon">⌘</div>
-
-                        <h3>Création de sites web</h3>
-
-                        <p>
-                            Des sites web modernes, adaptés aux téléphones,
-                            pour présenter votre activité et faciliter
-                            les contacts avec vos clients.
-                        </p>
-
-                        <a href="#contact" class="text-link">
-                            Parlons de votre site <span>↗</span>
-                        </a>
-                    </article>
-
-
-                    <article class="service-card featured-service">
-                        <span class="service-number">02</span>
-
-                        <div class="service-icon">✳</div>
-
-                        <h3>Identité visuelle</h3>
-
-                        <p>
-                            Logos, couleurs et supports visuels pour
-                            construire une image de marque cohérente,
-                            professionnelle et reconnaissable.
-                        </p>
-
-                        <a href="#contact" class="text-link">
-                            Construisons votre image <span>↗</span>
-                        </a>
-                    </article>
-
-
-                    <article class="service-card">
-                        <span class="service-number">03</span>
-
-                        <div class="service-icon">↗</div>
-
-                        <h3>Communication digitale</h3>
-
-                        <p>
-                            Des contenus et des idées de communication
-                            pour mieux présenter vos offres et développer
-                            votre visibilité sur les plateformes numériques.
-                        </p>
-
-                        <a href="#contact" class="text-link">
-                            Développons votre visibilité <span>↗</span>
-                        </a>
-                    </article>
-
+                <div>
+                    <span class="value-number">02</span>
+                    <span class="value-text">Créer des solutions adaptées</span>
                 </div>
 
-            </div>
-        </section>
-
-
-        <!-- PROJETS -->
-        <section class="section projects-section" id="projets">
-            <div class="container">
-
-                <div class="section-heading">
-                    <div>
-                        <p class="eyebrow">NOTRE UNIVERS</p>
-
-                        <h2>
-                            Des idées transformées
-                            <span>en projets.</span>
-                        </h2>
-                    </div>
-
-                    <p class="section-intro">
-                        Découvrez quelques réalisations et concepts
-                        développés dans l'univers de Stalay Digital.
-                    </p>
+                <div>
+                    <span class="value-number">03</span>
+                    <span class="value-text">Faire avancer vos projets</span>
                 </div>
-
-
-                <div class="projects-grid">
-
-                    <article class="project-card">
-                        <div class="project-visual project-restaurant">
-                            <span class="project-category">
-                                SITE WEB
-                            </span>
-
-                            <div class="project-mockup">
-                                <span class="mockup-small">
-                                    RESTAURANT
-                                </span>
-
-                                <strong>
-                                    Chez<br>Kadi
-                                </strong>
-
-                                <span class="mockup-line"></span>
-                                <span class="mockup-description">
-                                    Saveurs et convivialité
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="project-info">
-                            <div>
-                                <h3>Restaurant Chez Kadi</h3>
-
-                                <p>
-                                    Site vitrine de restaurant.
-                                </p>
-
-                                <span class="project-status">
-                                    Réalisation présentée
-                                </span>
-                            </div>
-
-                            <a href="https://koumanstanley-ctrl.github.io/restaurant-chez-kadi/"
-                               target="_blank"
-                               rel="noopener noreferrer"
-                               class="project-link"
-                               aria-label="Voir le site Restaurant Chez Kadi">
-                                ↗
-                            </a>
-                        </div>
-                    </article>
-
-
-                    <article class="project-card">
-                        <div class="project-visual project-brand">
-                            <span class="project-category">
-                                CONCEPT DIGITAL
-                            </span>
-
-                            <div class="brand-mockup">
-                                <span class="brand-emblem">O'</span>
-                                <strong>TCHOLOGO</strong>
-                                <span class="brand-divider"></span>
-                                <span class="brand-subtitle">
-                                    RESTAURANT
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="project-info">
-                            <div>
-                                <h3>O'TCHOLOGO</h3>
-
-                                <p>
-                                    Concept de présentation digitale
-                                    pour un restaurant.
-                                </p>
-
-                                <span class="project-status">
-                                    Concept de démonstration
-                                </span>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-
-                <p class="portfolio-note">
-                    Les projets présentés illustrent des réalisations
-                    et des concepts. Leur statut est précisé pour
-                    distinguer les réalisations des démonstrations.
-                </p>
 
             </div>
         </section>
@@ -350,80 +162,239 @@
         <section class="section about-section" id="apropos">
             <div class="container about-grid">
 
-                <div class="about-visual">
-                    <div class="about-decoration"></div>
-
-                    <img src="assets/photo-stalay.jpg"
-                         alt="Portrait du fondateur de Stalay Digital"
-                         class="about-photo">
-
-                    <div class="about-logo-card">
-                        <img src="assets/logo.png"
-                             alt=""
-                             class="about-logo">
-
-                        <span>STALAY DIGITAL</span>
-                    </div>
-                </div>
-
-
-                <div class="about-content">
-                    <p class="eyebrow">À PROPOS DE NOUS</p>
+                <div class="section-heading">
+                    <span class="section-tag">QUI SOMMES-NOUS ?</span>
 
                     <h2>
-                        Une vision.
-                        <span>Une ambition.</span>
-                        Un impact.
+                        Le digital comme
+                        <span class="gradient-text">levier de croissance.</span>
                     </h2>
 
                     <p>
-                        Stalay Digital est une initiative tournée vers
-                        la création numérique, la communication et
-                        l'accompagnement des entreprises dans leur
-                        développement digital.
+                        Stalay Digital est un projet entrepreneurial
+                        porté par la volonté de rendre les outils
+                        numériques utiles, accessibles et efficaces
+                        pour les entreprises et les porteurs de projets.
                     </p>
 
                     <p>
-                        Notre ambition est de proposer des solutions
-                        accessibles, créatives et adaptées aux besoins
-                        des entrepreneurs et des organisations.
+                        Notre approche repose sur la créativité,
+                        l'écoute et la recherche de solutions adaptées
+                        aux objectifs de chaque client.
                     </p>
 
-                    <div class="values-list">
-
-                        <div class="value-item">
-                            <span class="value-check">✓</span>
-
-                            <div>
-                                <strong>Créativité</strong>
-                                <p>Des idées pensées pour votre identité.</p>
-                            </div>
-                        </div>
-
-                        <div class="value-item">
-                            <span class="value-check">✓</span>
-
-                            <div>
-                                <strong>Engagement</strong>
-                                <p>Une attention portée à chaque projet.</p>
-                            </div>
-                        </div>
-
-                        <div class="value-item">
-                            <span class="value-check">✓</span>
-
-                            <div>
-                                <strong>Innovation</strong>
-                                <p>Des solutions adaptées au monde numérique.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <a href="#contact" class="button button-gold">
-                        Construisons quelque chose ensemble
-                        <span>↗</span>
+                    <a href="#contact" class="text-link">
+                        Construisons votre projet →
                     </a>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card-symbol">S.</div>
+
+                    <span class="section-tag">NOTRE VISION</span>
+
+                    <h3>Transformer les idées en opportunités.</h3>
+
+                    <p>
+                        Donner aux projets une image professionnelle
+                        et les aider à mieux se présenter dans
+                        l'univers numérique.
+                    </p>
+
+                    <div class="about-divider"></div>
+
+                    <div class="founder-mini">
+                        <div class="founder-initials">KS</div>
+
+                        <div>
+                            <strong>Kouman Kouassi Stanislas</strong>
+                            <span>Fondateur de Stalay Digital</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SERVICES -->
+        <section class="section services-section" id="services">
+            <div class="container">
+
+                <div class="section-title centered">
+                    <span class="section-tag">NOS SERVICES</span>
+
+                    <h2>
+                        Des solutions pour
+                        <span class="gradient-text">vous démarquer.</span>
+                    </h2>
+
+                    <p>
+                        Des outils numériques et créatifs pour
+                        développer votre présence et présenter
+                        vos activités avec professionnalisme.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <div class="service-icon icon-blue">⌘</div>
+
+                        <span class="service-number">01</span>
+
+                        <h3>Création de sites web</h3>
+
+                        <p>
+                            Des sites vitrines adaptés à votre activité
+                            pour présenter vos services, vos produits
+                            et vos moyens de contact.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Discutons de votre site →
+                        </a>
+                    </article>
+
+
+                    <article class="service-card">
+                        <div class="service-icon icon-purple">✳</div>
+
+                        <span class="service-number">02</span>
+
+                        <h3>Communication digitale</h3>
+
+                        <p>
+                            Des idées de contenu et des supports
+                            numériques pour améliorer la présentation
+                            de votre activité.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Parlons communication →
+                        </a>
+                    </article>
+
+
+                    <article class="service-card">
+                        <div class="service-icon icon-green">↗</div>
+
+                        <span class="service-number">03</span>
+
+                        <h3>Solutions numériques</h3>
+
+                        <p>
+                            Réflexion et création d'outils numériques
+                            simples pour répondre aux besoins de
+                            votre projet ou de votre organisation.
+                        </p>
+
+                        <a href="#contact" class="service-link">
+                            Présentez votre besoin →
+                        </a>
+                    </article>
+
+                </div>
+
+                <p class="service-note">
+                    Chaque projet fait l'objet d'une discussion
+                    préalable afin de préciser les besoins et les
+                    possibilités de réalisation.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- RÉALISATIONS -->
+        <section class="section projects-section" id="realisations">
+            <div class="container">
+
+                <div class="section-title">
+                    <span class="section-tag">QUELQUES PROJETS</span>
+
+                    <h2>
+                        Des idées qui prennent
+                        <span class="gradient-text">forme.</span>
+                    </h2>
+
+                    <p>
+                        Découvrez quelques exemples de projets web.
+                        Les concepts sont clairement distingués
+                        des réalisations commandées par des clients.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <div class="project-preview preview-restaurant">
+                            <div class="preview-window">
+                                <div class="preview-dots">
+                                    <i></i><i></i><i></i>
+                                </div>
+
+                                <div class="preview-restaurant-content">
+                                    <span>RESTAURANT</span>
+                                    <strong>Chez Kadi</strong>
+                                    <small>Découvrez notre univers</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">SITE WEB</span>
+                                <span class="project-status">EXEMPLE EN LIGNE</span>
+                            </div>
+
+                            <h3>Restaurant Chez Kadi</h3>
+
+                            <p>
+                                Site vitrine de démonstration permettant
+                                de découvrir une présentation web pour
+                                un restaurant.
+                            </p>
+
+                            <a
+                                href="https://koumanstanley-ctrl.github.io/restaurant-chez-kadi/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="text-link"
+                            >
+                                Voir le site →
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <article class="project-card">
+                        <div class="project-preview preview-concept">
+                            <div class="concept-symbol">O'</div>
+                            <span>CONCEPT DIGITAL</span>
+                            <strong>Une identité en ligne</strong>
+                        </div>
+
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-category">CONCEPT WEB</span>
+                                <span class="project-status status-concept">DÉMONSTRATION</span>
+                            </div>
+
+                            <h3>Concept O'TCHOLOGO</h3>
+
+                            <p>
+                                Une piste de présentation numérique
+                                imaginée pour illustrer les possibilités
+                                d'un site destiné à un restaurant.
+                            </p>
+
+                            <span class="project-disclaimer">
+                                Projet conceptuel, non présenté comme
+                                une commande client.
+                            </span>
+                        </div>
+                    </article>
 
                 </div>
 
@@ -433,40 +404,143 @@
 
         <!-- CONTACT -->
         <section class="section contact-section" id="contact">
-            <div class="container">
+            <div class="container contact-grid">
 
-                <div class="contact-box">
+                <div class="contact-content">
+                    <span class="section-tag">CONTACT</span>
 
-                    <div class="contact-content">
-                        <p class="eyebrow">VOTRE PROCHAIN PROJET</p>
+                    <h2>
+                        Un projet en tête ?
+                        <span class="gradient-text">Parlons-en.</span>
+                    </h2>
 
-                        <h2>
-                            Et si nous donnions
-                            <span>vie à votre idée ?</span>
-                        </h2>
+                    <p>
+                        Tu as une entreprise, une activité ou une idée
+                        à développer ? Présente-moi ton projet afin
+                        que nous puissions discuter de tes besoins.
+                    </p>
 
-                        <p>
-                            Présentez-nous votre besoin et discutons
-                            de la solution digitale adaptée à votre activité.
+                    <div class="contact-details">
+
+                        <a href="tel:+2250103510738" class="contact-item">
+                            <span class="contact-icon">☎</span>
+                            <span>
+                                <small>TÉLÉPHONE</small>
+                                <strong>+225 01 03 51 07 38</strong>
+                            </span>
+                        </a>
+
+                        <a
+                            href="https://wa.me/2250103510738"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-item"
+                        >
+                            <span class="contact-icon whatsapp-icon">◉</span>
+                            <span>
+                                <small>WHATSAPP</small>
+                                <strong>Écrire un message</strong>
+                            </span>
+                        </a>
+
+                        <a
+                            href="mailto:koumanstanley@gmail.com"
+                            class="contact-item"
+                        >
+                            <span class="contact-icon">✉</span>
+                            <span>
+                                <small>E-MAIL</small>
+                                <strong>koumanstanley@gmail.com</strong>
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
+
+
+                <div class="contact-form-card">
+
+                    <span class="form-kicker">PARLONS DE VOTRE IDÉE</span>
+
+                    <h3>Présentez votre projet.</h3>
+
+                    <p>
+                        Remplissez les champs ci-dessous.
+                        Votre message sera préparé dans WhatsApp.
+                    </p>
+
+                    <form id="contact-form">
+
+                        <label for="name">Votre nom</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Comment vous appelez-vous ?"
+                            required
+                        >
+
+                        <label for="activity">Votre activité</label>
+                        <input
+                            type="text"
+                            id="activity"
+                            name="activity"
+                            placeholder="Restaurant, commerce, association..."
+                            required
+                        >
+
+                        <label for="project-type">Votre besoin</label>
+                        <select id="project-type" name="project-type" required>
+                            <option value="">Choisissez une option</option>
+                            <option value="Création de site web">Création de site web</option>
+                            <option value="Communication digitale">Communication digitale</option>
+                            <option value="Solution numérique">Solution numérique</option>
+                            <option value="Autre demande">Autre demande</option>
+                        </select>
+
+                        <label for="message">Décrivez votre projet</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            placeholder="Expliquez-nous votre idée..."
+                            required
+                        ></textarea>
+
+                        <button type="submit" class="btn btn-primary form-submit">
+                            Envoyer sur WhatsApp →
+                        </button>
+
+                        <p class="form-privacy">
+                            Ce formulaire ouvre WhatsApp avec un message
+                            préparé. Il ne stocke pas vos informations
+                            sur ce site.
                         </p>
 
-                        <a href="https://www.instagram.com/stalay_digital/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="button button-gold">
-                            Nous contacter sur Instagram
-                            <span>↗</span>
-                        </a>
-                    </div>
-
-                    <div class="contact-symbol">
-                        <img src="assets/logo.png"
-                             alt="Stalay Digital"
-                             class="contact-logo">
-                    </div>
+                    </form>
 
                 </div>
 
+            </div>
+        </section>
+
+
+        <!-- APPEL À L'ACTION -->
+        <section class="final-cta">
+            <div class="container final-cta-inner">
+                <div>
+                    <span class="section-tag">STALAY DIGITAL</span>
+                    <h2>Votre prochaine idée commence ici.</h2>
+                </div>
+
+                <a
+                    href="https://wa.me/2250103510738"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-white"
+                >
+                    Contactez-nous →
+                </a>
             </div>
         </section>
 
@@ -475,22 +549,28 @@
 
     <!-- PIED DE PAGE -->
     <footer class="footer">
-        <div class="container footer-content">
+        <div class="container footer-top">
 
-            <a href="#accueil" class="footer-brand">
-                <img src="assets/logo.png" alt="" class="footer-logo">
-                <span>STALAY DIGITAL</span>
+            <a href="#accueil" class="brand footer-brand">
+                <img src="assets/logo.png" alt="Logo Stalay Digital">
+                <span>STALAY<span class="brand-accent"> DIGITAL</span></span>
             </a>
 
-            <p>
-                Des idées qui prennent forme.
-            </p>
+            <p>Des idées qui prennent forme.</p>
 
-            <p class="copyright">
+            <a href="mailto:koumanstanley@gmail.com">
+                Nous écrire
+            </a>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <span>
                 © <span id="current-year"></span> Stalay Digital.
                 Tous droits réservés.
-            </p>
+            </span>
 
+            <span>Fondateur : Kouman Kouassi Stanislas</span>
         </div>
     </footer>
 
